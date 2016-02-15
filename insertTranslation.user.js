@@ -1,3 +1,16 @@
+// ==UserScript==
+// @name        insertTranslation
+// @description Inserts translation instead of highlighted text (*>ru)
+// @namespace   *
+// @version     1
+// @grant       none
+// ==/UserScript==
+
+if (window.top != window.self)  //don't run on frames or iframes
+{
+    return;
+}
+
 var keys = [], onAir = 0,
     join = function(obj, t1, t2) {
         var result = [],
